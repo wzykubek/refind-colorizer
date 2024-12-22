@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "refind-palette-builder"
-version = "0.1.0"
+version = "0.0.0"
 description = "Tool for generating rEFInd color palette based on regular theme."
-authors = ["Wiktor Zykubek <wz-git@mailbox.org>"]
+authors = ["Wiktor Zykubek <dev@wzykubek.xyz>"]
 license = "ISC"
 readme = "readme.md"
 packages = [{ include = "refind_palette" }]
@@ -14,9 +14,12 @@ CairoSVG = "^2.7.1"
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.black]
 line-length = 88
+
+[tool.poetry-dynamic-versioning]
+enable = true
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
