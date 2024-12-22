@@ -1,4 +1,4 @@
-# refind-palette-builder
+# rEFInd Colorizer 
 
 ## Usage
 

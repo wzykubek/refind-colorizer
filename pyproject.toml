@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "refind-palette-builder"
+name = "refind_colorizer"
 version = "0.0.0"
 description = "Tool for generating rEFInd color palette based on regular theme."
 authors = ["Wiktor Zykubek <dev@wzykubek.xyz>"]
 license = "ISC"
 readme = "readme.md"
-packages = [{ include = "refind_palette" }]
+packages = [{ include = "refind_colorizer" }]
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -15,7 +15,7 @@ CairoSVG = "^2.7.1"
 black = "^24.10.0"
 
 [tool.poetry.scripts]
-refind-palette-builder = "refind_palette.cli:main"
+refind-palette-builder = "refind_colorizer.cli:main"
 
 [tool.black]
 line-length = 88
