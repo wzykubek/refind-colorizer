@@ -14,11 +14,16 @@ CairoSVG = "^2.7.1"
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
 
+[tool.poetry.scripts]
+refind-palette-builder = "refind_palette.cli:main"
+
 [tool.black]
 line-length = 88
 
 [tool.poetry-dynamic-versioning]
 enable = true
+metadata = true
+dirty = true
 
 [build-system]
 requires = ["poetry-core", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
